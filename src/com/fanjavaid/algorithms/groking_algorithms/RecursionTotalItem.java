@@ -1,3 +1,5 @@
+package com.fanjavaid.algorithms.groking_algorithms;
+
 import java.util.*;
 
 public class RecursionTotalItem {

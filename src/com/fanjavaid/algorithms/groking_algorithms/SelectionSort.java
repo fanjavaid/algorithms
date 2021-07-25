@@ -1,3 +1,5 @@
+package com.fanjavaid.algorithms.groking_algorithms;
+
 import java.util.*;
 
 public class SelectionSort {
@@ -6,15 +8,17 @@ public class SelectionSort {
 		System.out.println(Arrays.toString(data));
 
 		int n = data.length;
-		for (int i = 0; i < n-1; i++) {
+		for (int i = 0; i < n; i++) {
 			int min = i;
 			for (int j = i+1; j < n; j++) {
 				if (data[j] < data[min]) min = j;
 			}
 
-			int temp = data[min];
-			data[min] = data[i];
-			data[i] = temp;
+			if (i != min) {
+				int temp = data[min];
+				data[min] = data[i];
+				data[i] = temp;
+			}
 		}
 
 		System.out.println("Sorted to:");

@@ -1,3 +1,5 @@
+package com.fanjavaid.algorithms.groking_algorithms;
+
 public class RecursionBinarySearch {
 	public static void main(String[] args) {
 		int[] arr = { -1, 10, 18, 75, 99, 1000 };
